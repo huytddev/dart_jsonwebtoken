@@ -262,7 +262,7 @@ class JWT {
   }) {
     try {
       header ??= {};
-      header!.addAll({'alg': algorithm.name, 'typ': 'JWT'});
+      header!.addAll({'alg': algorithm.name});
 
       if (payload is Map<String, dynamic> || payload is Map<dynamic, dynamic>) {
         try {
